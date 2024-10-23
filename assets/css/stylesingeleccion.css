@@ -1,0 +1,131 @@
+body {
+    font-family: 'chewy'; font-size: 26px;
+    background: #7702bf;
+    background-size: cover;
+}
+
+h1 {
+    margin-top: 12%;
+    color: #000000;
+    font-size: 80px;
+    -webkit-text-stroke: 1px black;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #58028d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #30024d;
+}
+
+#button2{
+    padding: 1px 1px;
+    margin-top: 100px
+}
+
+.container2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+div{
+    text-align: center;
+}
+
+.cssbuttons-io-button {
+    background: #f78907;
+    color: #000000;
+    font-family: inherit;
+    padding: 0 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    text-align: right;
+    margin: 10px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .cssbuttons-io-button .icon {
+    background: #1947E4;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #f78907;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+div{
+    text-align: center;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+span
+{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}

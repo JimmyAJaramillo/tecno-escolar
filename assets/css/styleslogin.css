@@ -1,0 +1,93 @@
+body {
+    font-family: 'chewy'; 
+    font-size: 30px;
+    background: rgba(119,2,191,1);
+}
+.container{
+    align-items: center;
+}
+.contenido{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    margin-bottom: 0;
+    -webkit-text-stroke: 2px black;
+
+}
+
+h1{
+    display: inline-block;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+input::before {
+    content: '';
+    position: absolute;
+    width: 48%;
+    height: 50%;
+    background-color: rgb(0, 17, 116);
+    transform: rotate(-15deg);
+    transform-origin: bottom left;
+    z-index: -1;
+
+}
+
+
+input[type="text"], input[type="password"] {
+    width: 20%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    margin-left: 39%;
+}
+
+input[type="submit"] {
+    width: 10%;
+    padding: 10px;
+    background: linear-gradient(90deg,#f78907,#1c51ff);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 45%;
+    font-family: 'chewy'; font-size: 20px;
+}
+
+button {
+    width: 10%;
+    padding: 10px;
+    background: linear-gradient(90deg,#f78907,#1c51ff);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 75%;
+    font-family: 'chewy'; font-size: 20px;
+}
+@keyframes animate
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
